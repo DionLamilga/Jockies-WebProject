@@ -9,7 +9,7 @@
 
                     <!--Hero Content start-->
                     <div class="page-content-2">
-                        <h1>Hi! Howdy</h1>
+                        <h1>Hi! Gamer</h1>
                         <h3>our contact information</h3>
                     </div>
                     <!--Hero Content end-->
