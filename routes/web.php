@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/login','App\Http\Controllers\ControllerGame@login');
+
+Route::get('/daftar','App\Http\Controllers\ControllerGame@daftar');
+
+Route::get('/contact','App\Http\Controllers\ControllerGame@contact');
