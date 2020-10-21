@@ -2,7 +2,7 @@
 @section('content')
     
     <!--Page Banner Area Start-->
-    <div class="page-banner-2" style="background-image: url(assets/images/bg/page-bg-2.jpg)">
+    <div class="page-banner-2" style="background-image: url(assets/images/bg/page-bg-2.PNG)">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -35,15 +35,15 @@
                         <div class="contact-address">
                             <div class="contact-information">
                                 <h4>Address</h4>
-                                <p>256 Main Streen, South Point 12FG Silicon villa, New Yourk, USA</p>
+                                <p>Jl. Soekarno Hatta, Malang</p>
                             </div>
                             <div class="contact-information">
                                 <h4>Phone</h4>
-                                <p><a href="tel:01234567890">01234 567 890</a><a href="tel:01234567891">01234 567 891</a></p>
+                                <p><a href="tel:01234567890">081241361789</a></p>
                             </div>
                             <div class="contact-information">
                                 <h4>Web</h4>
-                                <p><a href="mailto:info@example.com">info@example.com</a><a href="#">www.example.com</a></p>
+                                <p><a href="mailto:info@example.com">jockies.id@jcorp.com</a></p>
                             </div>
                         </div>
                     </div>
@@ -52,27 +52,9 @@
             <div class="row">
                 <div class="col-lg-8 col-md-12">
                     <div class="contact-form mt-90 mt-lg-70 mt-md-60 mt-sm-50 mt-xs-20">
-                        <h4>Leave a Message</h4>
-                        <form action="#" class="comment-form">
-                            <div class="row">
-                                <div class="col-md-6 col-12 mb-30">  
-                                    <input type="text" name="name" placeholder="Name">
-                                </div>
-
-                                <div class="col-md-6 col-12 mb-30">   
-                                    <input type="email" name="email" placeholder="Email">
-                                </div>
-
-                                <div class="col-12 mb-30">   
-                                    <textarea name="message" placeholder="Message"></textarea>
-                                </div>
-
-                                <div class="col-12">
-                                    <input type="submit" value="send now">
-                                </div>
-
-                            </div>
-                        </form>
+                        <h4>Latar Belakang</h4>
+                        <p>Awal mula terciptaya ide untuk membuat website ini karena banyaknya meliah akun di berbagai macam media sosail yang menawarkan jasa joki. Ketika pengguna lain melihat iklan di akun media sosail tersebut yang ada dibenak meraka yang berkeingian untuk menjokikan akunnya adalah "apakah akun ku aman?", "apakah jokinya bisa terpercaya?". </p>
+                               <p>Oleh Karena itu Website "Jockies" Menawarkan jasa joki yang aman dan terpercaya. Kami menyediakan transaksi yang aman dan Para penjoki Profesional. Keamanan dan Kepercayaan pelanggan adalah kunci kami dalam membangun website ini.</p>
                     </div>
                 </div>
             </div>

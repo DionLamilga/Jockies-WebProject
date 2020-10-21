@@ -102,7 +102,7 @@
     @yield('content')
 
     <!--Footer section start-->
-    <footer class="footer-section style-2 section bg-theme" style="background-image: url(assets/images/bg/footer-bg.jpg)">
+    <footer class="footer-section style-2 section bg-theme" style="background-image: url(assets/images/bg/footer-bg.PNG)">
        
         <!--Footer Top start-->
         <div class="footer-top section pt-80 pt-lg-70 pt-md-60 pt-sm-50 pt-xs-40 pb-80 pb-lg-70 pb-md-60 pb-sm-15 pb-xs-40">

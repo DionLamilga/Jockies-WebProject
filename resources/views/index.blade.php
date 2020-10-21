@@ -60,7 +60,7 @@
                 <div class="col-12">
                     <div class="featured-slide">
                         <div class="single-featured img-full">
-                            <a href="#"><img src="assets/images/feature/slide-1.PNG" alt=""></a>
+                            <a href="#"><img src="assets/images/feature/slide-1.jpg" alt=""></a>
                         </div>
                         <div class="single-featured img-full">
                             <a href="#"><img src="assets/images/feature/slide-2.jpg" alt=""></a>
@@ -180,7 +180,7 @@
                         </div>
                         <div class="game-content">
                             <h4><a href="games-details.html">Apex Legend</a></h4>
-                            <span>PC/span>
+                            <span>PC</span>
                         </div>
                     </div>
                     <!--Single Game End-->
@@ -191,7 +191,7 @@
                         </div>
                         <div class="game-content">
                             <h4><a href="games-details.html">League of Legend : Wild Rift</a></h4>
-                            <span>PC/span>
+                            <span>PC</span>
                         </div>
                     </div>
                     <!--Single Game End-->
@@ -200,22 +200,22 @@
                     <!--Single Game Start-->
                     <div class="single-game mb-50">
                         <div class="game-img">
-                            <a href="games-details.html"><img src="assets/images/game/game1.jpg" alt=""></a>
+                            <a href="games-details.html"><img src="assets/images/game/game9.jpg" alt=""></a>
                         </div>
                         <div class="game-content">
-                            <h4><a href="games-details.html">the elder scroll</a></h4>
-                            <span>pc/xbox/ps4</span>
+                            <h4><a href="games-details.html">PUBG : Mobile</a></h4>
+                            <span>Mobile</span>
                         </div>
                     </div>
                     <!--Single Game End-->
                     <!--Single Game Start-->
                     <div class="single-game mb-50">
                         <div class="game-img">
-                            <a href="games-details.html"><img src="assets/images/game/game3.jpg" alt=""></a>
+                            <a href="games-details.html"><img src="assets/images/game/game10.jpg" alt=""></a>
                         </div>
                         <div class="game-content">
-                            <h4><a href="games-details.html">the elder scroll</a></h4>
-                            <span>pc/xbox/ps4</span>
+                            <h4><a href="games-details.html">Counter Strike : GO</a></h4>
+                            <span>PC</span>
                         </div>
                     </div>
                     <!--Single Game End-->
