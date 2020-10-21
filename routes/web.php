@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/home','App\Http\Controllers\ControllerGame@home');
+
 Route::get('/login','App\Http\Controllers\ControllerGame@login');
 
 Route::get('/daftar','App\Http\Controllers\ControllerGame@daftar');

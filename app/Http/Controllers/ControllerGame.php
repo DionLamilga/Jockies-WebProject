@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 class ControllerGame extends Controller
 {
     //
+    public function home()
+    {
+        return view('index');
+    }
+
     public function login()
     {
         return view('login');

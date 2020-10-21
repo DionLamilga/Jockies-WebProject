@@ -23,7 +23,7 @@
             </div>
             <!--Hero Item end-->
             <!--Hero Item start-->
-            <div class="hero-item hero-item-2" style="background-image: url(assets/images/hero/hero-3.jpg)">
+            <div class="hero-item hero-item-2" style="background-image: url(assets/images/hero/hero-3.PNG)">
                 <div class="container container-1520">
                     <div class="row">
                         <div class="col-12">

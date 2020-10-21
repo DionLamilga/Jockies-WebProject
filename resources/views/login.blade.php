@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('content')
     <!--Page Banner Area Start-->
-    <div class="page-banner-area" style="background-image: url(assets/images/bg/page-bg.jpg)">
+    <div class="page-banner-area" style="background-image: url(assets/images/bg/page-bg2.PNG)">
         <div class="container">
             <div class="row">
                 <div class="col-12">

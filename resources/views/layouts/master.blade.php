@@ -44,7 +44,7 @@
                     <div class="col-lg-6 col-12 order-md-3 order-lg-2 d-flex justify-content-center">
                         <nav class="main-menu menu-style-2">
                             <ul>
-                                <li><a href="index.html">Home</a>                                        
+                                <li><a href="/home">Home</a>                                        
                                 </li>
                                 <li><a href="games.html">games</a>
                                     <ul class="sub-menu">
