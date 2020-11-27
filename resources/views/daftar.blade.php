@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="page-content text-center">
-                        <h1>KINGS OF THE <br> WARRIORS</h1>
+                        <h1>JOCKIES</h1>
                     </div>
                 </div>
             </div>
@@ -25,7 +25,6 @@
                     <div class="gilbard-login">
 
                         <h3>We will need for your registration</h3>
-                        <p>Gilbard provide how all this mistaken idea of denouncing pleasure and sing pain born an will give you a complete account of the system, and expound</p>
 
                         <!-- Login Form -->
                         <form action="#">
