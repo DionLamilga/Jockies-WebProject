@@ -27,12 +27,13 @@
                         <h3>We will need for your registration</h3>
 
                         <!-- Login Form -->
-                        <form action="#">
+                        <form action="{{ route('registerPengguna') }}" method="post">
+                        {{csrf_field()}}
                             <div class="row">
-                                <div class="col-12 mb-30"><input type="text" placeholder="Your name here"></div>
-                                <div class="col-12 mb-30"><input type="email" placeholder="Your email here"></div>
-                                <div class="col-12 mb-30"><input type="password" placeholder="Enter passward"></div>
-                                <div class="col-12 mb-30"><input type="password" placeholder="Conform password"></div>
+                                <div class="col-12 mb-30"><input type="text" placeholder="Your username here" name="username"></div>
+                                <div class="col-12 mb-30"><input type="email" placeholder="Your email here" name="email"></div>
+                                <div class="col-12 mb-30"><input type="password" placeholder="Enter passward" name="password"></div>
+                                <!-- <div class="col-12 mb-30"><input type="password" placeholder="Conform password" name="password"></div> -->
                                 <div class="col-12"><input type="submit" value="register"></div>
                             </div>
                         </form>

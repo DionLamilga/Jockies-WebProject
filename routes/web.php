@@ -19,10 +19,16 @@ Route::get('/', function () {
 
 Route::get('/home','App\Http\Controllers\ControllerGame@home');
 
-Route::get('/login','App\Http\Controllers\ControllerGame@login');
-
-Route::get('/daftar','App\Http\Controllers\ControllerGame@daftar');
-
 Route::get('/contact','App\Http\Controllers\ControllerGame@contact');
 
-Route::get('/admin','App\Http\Controllers\ControllerGame@admin');
+Route::post('/daftar',[App\Http\Controllers\customAuth\RegisterController::class,'store'])->name('registerPengguna');
+//login
+Route::get('/login',[\App\Http\Controllers\customAuth\LoginController::class,'view']);
+    
+Route::post('/login',[App\Http\Controllers\customAuth\loginController::class,'cek'])->name('loginCustomAuth');
+//register
+Route::get('/daftar',[App\Http\Controllers\customAuth\RegisterController::class,'view']);
+
+Route::get('/daftar',[App\Http\Controllers\customAuth\RegisterController::class,'view']);
+
+Route::get('/logout',[App\Http\Controllers\customAuth\LoginController::class,'logout']);

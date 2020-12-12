@@ -27,10 +27,11 @@
                         <h3>Login to your account</h3>
 
                         <!-- Login Form -->
-                        <form action="#">
+                        <form action="{{ route('loginCustomAuth') }}" method="post">
+                        {{csrf_field()}}
                             <div class="row">
-                                <div class="col-12 mb-30"><input type="text" placeholder="Type your username or email address"></div>
-                                <div class="col-12 mb-20"><input type="password" placeholder="Enter your passward"></div>
+                                <div class="col-12 mb-30"><input type="text" placeholder="Type your username" name="username"></div>
+                                <div class="col-12 mb-20"><input type="password" placeholder="Enter your passward" name="password"></div>
                                 <div class="col-12 mb-15">
 
                                     <input type="checkbox" id="remember_me">

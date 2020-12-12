@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class User extends Migration
+class AddRememberTokenToPenggunas extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,8 @@ class User extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
-            $table->id();
-            $table->string('Nama',30);
-            $table->string('Email',50);
-            $table->string('Password',30);
-            $table->string('Role_id',30);
+        Schema::table('penggunas', function (Blueprint $table) {
+            $table->string('remember_token');
         });
     }
 
@@ -29,6 +25,8 @@ class User extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::table('penggunas', function (Blueprint $table) {
+            //
+        });
     }
 }

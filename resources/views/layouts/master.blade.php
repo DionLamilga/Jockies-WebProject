@@ -75,10 +75,16 @@
                     
                     <!--Header Right Wrap-->
                     <div class="col-12 col-md-9 order-md-2 order-lg-3 col-lg-3">
-                        <div class="header-right-wrap">
+                        <div class="header-right-wrap menu-style-2">
                             <ul>
+                            @if(Auth::check())
+                               
+                                <li><a style="color:white"><img src="assets/images/gicon.png" style="width:23px;height:23px;" ><span>  {{Auth::user()->username}}</span></a></li>
+                                <li><a href="/logout">LOGOUT</a></li>
+                            @else
                                 <li><a href="/login">LOGIN</a></li>
                                 <li><a href="/daftar">REGISTER</a></li>
+                            @endif
                             </ul>
                         </div>
                     </div>
