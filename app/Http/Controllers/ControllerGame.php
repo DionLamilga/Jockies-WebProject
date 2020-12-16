@@ -26,4 +26,9 @@ class ControllerGame extends Controller
     {
         return view('contact');
     }
+
+    public function ml()
+    {
+        return view('ml-index');
+    }
 }

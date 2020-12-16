@@ -21,6 +21,8 @@ Route::get('/home','App\Http\Controllers\ControllerGame@home');
 
 Route::get('/contact','App\Http\Controllers\ControllerGame@contact');
 
+Route::get('/ml','App\Http\Controllers\ControllerGame@ml');
+
 Route::post('/daftar',[App\Http\Controllers\customAuth\RegisterController::class,'store'])->name('registerPengguna');
 //login
 Route::get('/login',[\App\Http\Controllers\customAuth\LoginController::class,'view']);
