@@ -26,9 +26,4 @@ class ControllerGame extends Controller
     {
         return view('contact');
     }
-
-    public function admin()
-    {
-        return view('admin/loginadmin');
-    }
 }

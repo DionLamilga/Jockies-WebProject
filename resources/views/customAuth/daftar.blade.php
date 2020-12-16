@@ -33,6 +33,7 @@
                                 <div class="col-12 mb-30"><input type="text" placeholder="Your username here" name="username"></div>
                                 <div class="col-12 mb-30"><input type="email" placeholder="Your email here" name="email"></div>
                                 <div class="col-12 mb-30"><input type="password" placeholder="Enter passward" name="password"></div>
+                                <input type="hidden" name="role" value="2">
                                 <!-- <div class="col-12 mb-30"><input type="password" placeholder="Conform password" name="password"></div> -->
                                 <div class="col-12"><input type="submit" value="register"></div>
                             </div>

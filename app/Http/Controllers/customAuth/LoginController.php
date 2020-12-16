@@ -21,8 +21,7 @@ class LoginController extends Controller
         $credentials = $request->only('username', 'password');
      
         if(Auth::attempt($credentials)){
-            //jika berhasil login
-             return view('index');
+            return redirect('admin/adduser');
             }
         else{
             return ('gagal login');
@@ -31,6 +30,6 @@ class LoginController extends Controller
 
     public function logout(Request $request){
         Auth::logout();
-        return redirect('/index');
+        return redirect('/');
     }
 }

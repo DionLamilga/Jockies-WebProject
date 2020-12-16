@@ -16,5 +16,6 @@ class pengguna extends Model
     'email',
     'password',
     'remember_token',
+    'role',
     ];
 }
