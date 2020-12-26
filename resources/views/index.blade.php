@@ -60,7 +60,7 @@
                 <div class="col-12">
                     <div class="featured-slide">
                         <div class="single-featured img-full">
-                            <a href="#"><img src="assets/images/feature/slide-1.jpg" alt=""></a>
+                            <a href="/ml"><img src="assets/images/feature/slide-1.jpg" alt=""></a>
                         </div>
                         <div class="single-featured img-full">
                             <a href="#"><img src="assets/images/feature/slide-2.jpg" alt=""></a>
@@ -139,10 +139,10 @@
                     <!--Single Game Start-->
                     <div class="single-game mb-50">
                         <div class="game-img">
-                            <a href="games-details.html"><img src="assets/images/game/game5.jpg" alt=""></a>
+                            <a href="/ml"><img src="assets/images/game/game5.jpg" alt=""></a>
                         </div>
                         <div class="game-content">
-                            <h4><a href="games-details.html">Mobile Legend : Bang Bang</a></h4>
+                            <h4><a href="/ml">Mobile Legend : Bang Bang</a></h4>
                             <span>Mobile</span>
                         </div>
                     </div>

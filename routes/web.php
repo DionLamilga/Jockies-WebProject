@@ -31,10 +31,12 @@ Route::post('/login',[App\Http\Controllers\customAuth\loginController::class,'ce
 //register
 Route::get('/daftar',[App\Http\Controllers\customAuth\RegisterController::class,'view']);
 
-Route::get('/daftar',[App\Http\Controllers\customAuth\RegisterController::class,'view']);
-
 Route::get('/logout',[App\Http\Controllers\customAuth\LoginController::class,'logout']);
 
 Route::get('/admin/adduser',[App\Http\Controllers\AdminPage\AdminController::class,'adduser'])->middleware('MiddlewareCek');
 
 Route::get('/admin/tbluser',[App\Http\Controllers\AdminPage\AdminController::class,'tbluser'])->middleware('MiddlewareCek');
+
+Route::post('/trans',[App\Http\Controllers\TransaksiController::class,'store'])->name('transaksiPengguna');
+
+Route::get('/trans',[App\Http\Controllers\TransaksiController::class,'view']);

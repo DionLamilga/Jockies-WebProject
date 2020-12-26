@@ -48,23 +48,13 @@
                                 </li>
                                 <li><a href="games.html">games</a>
                                     <ul class="sub-menu">
-                                        <li><a href="games.html">Games</a></li>
-                                        <li><a href="games-details.html">Games Details</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Pages</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="blog.html">Blog</a></li>
-                                        <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                        <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                        <li><a href="blog-list.html">Blog List</a></li>
-                                        <li><a href="blog-list-left-sidebar.html">Blog List Left Sidebar</a></li>
-                                        <li><a href="single-blog.html">Single Blog</a></li>
-                                        <li><a href="single-blog-left.html">Single Blog Left Sidebar</a></li>
-                                        <li><a href="gallery.html">Gallery</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
-                                        <li><a href="/login">Login</a></li>
-                                        <li><a href="/daftar">REGISTER</a></li>
+                                        <li><a href="/ml">MOBILE LEGENDS</a></li>
+                                        <li><a href="#">DOTA 2</a></li>
+                                        <li><a href="#">VALORANT</a></li>
+                                        <li><a href="#">PUBG MOBILE</a></li>
+                                        <li><a href="#">FREE FIRE</a></li>
+                                        <li><a href="#">WILD RIFT</a></li>
+                                        <li><a href="#">CALL OF DUTY MOBILE</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="/contact">Contact</a></li>

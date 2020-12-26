@@ -24,5 +24,6 @@ class MiddlewareCek
         else{
             return redirect('/');
         }
+
     }
 }

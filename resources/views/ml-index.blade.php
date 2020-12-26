@@ -2,16 +2,12 @@
 @section('content')
 
     <!--Page Banner Area Start-->
-    <div class="page-banner-area" style="background-image: url(assets/images/bg/page-bg.jpg)">
+    <div class="page-banner-area" style="background-image: url(assets/images/bg/ml.jpg)">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="page-content text-center">
-                        <h1>KINGS OF THE <br> WARRIORS</h1>
-                        <a class="df-btn" href="#">Buy now</a>
-                        <ul class="page-breadcrumb">
-                            <li><a href="index.html">Home</a></li>
-                            <li>Blog</li>
+                        <h1>MOBILE LEGEND</h1>
                         </ul>
                     </div>
                 </div>
@@ -29,42 +25,109 @@
                         <div class="col-12">
                             <div class="blog-details">
                                 <div class="blog-img">
-                                    <a href="single-blog.html"><img src="assets/images/blog/blog-details-1.jpg" alt=""></a>
-                                    <div class="meta-box">
-                                        <ul class="meta meta-border-bottom">
-                                            <li><a href="#">Smith</a></li> 
-                                            <li>15 Devember, 2018 </li>
-                                            <li><a href="#">25 Comments</a></li>
-                                        </ul>
-                                    </div>
+                                    <a href="single-blog.html"><img src="assets/images/bg/ml2.jpg" alt=""></a>
                                 </div>
                                 <div class="blog-content">
-                                    <h3>latest version of angry birds released in 2019</h3>
-                                    <p><strong>Need for Sped</strong> rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally tances occur in which toil and pain can procure him some great pleasure pleasure rationally encounter sequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain itsuse it is pain, but because occasionally circumstances occur in which toil and pain can procure </p>
-                                    <p>Rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally tances occur in which toil and pain can procure him some great pleasure pleasure rationally encounte</p>
-                                    <p>Rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or ues or desires to obtain pain of itself, because it is pain, but because occasionally tances occur in which toil and pain can procure him some great pleasure pleasure rationally encounte</p>
-                                    <div class="blog-tags">
-                                        <h5>Tags:</h5> 
-                                        <a href="#">Games</a>
-                                        <a href="#">Playstation</a>
-                                        <a href="#">Xbox</a>
-                                    </div>
+                                    <h3>MOBILE LEGEND : BANG BANG</h3>
+                                    <p>Game online adalah sebuah permainan yang dimainkan menggunakan jaringan internet yang dapat menghubungkan player satu dengan yang lain. Game online sangat banyak jenisnya, mulai dari game online berbasis mobile gaming yang dimainkan melalui perangkat gawai (gadget), sampai dimainkan melalui personal computer seperti Game Mobile Lagend ini. Mobile Legends: Bang Bang adalah sebuah permainan MOBA (Multiplayer Online Battle Arena) yang dirancang untuk ponsel. Kedua tim lawan berjuang untuk mencapai dan menghancurkan basis musuh sambil mempertahankan basis mereka sendiri untuk mengontrol tiga "lane" yang dikenal sebagai "top(lane atas)", "middle (lane tengah)" dan "bottom(lane bawah)", yang menghubungkan basis mereka.</p>
+                                    <p>Game Mobile Legends dibuat,diciptakan dan dimiliki oleh developer China yaitu Moonton Technology Co.,Ltd Moonton Bermarkas di kota Shanghai,China. Game ini dirilis pada Tanggal 11 Juli 2016 khusus untuk server Tiongkok dan Indonesia sedangkan untuk IOS server global dirilis pada tanggal 9 November 2016.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    
-                            <form action="#" class="comment-form">
-                                <div class="row ">
+        <h1>Form Untuk Order</h1>
 
-                                    <div class="col-12">
-                                        <input type="submit" value="send now">
+        <div class="Forum-create-area section pt-95 pt-lg-75 pt-md-65 pt-sm-55 pt-xs-45 pb-xs-45">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="forum-form">
+                        <form action="{{ route('transaksiPengguna') }}" method="post">
+                        {{csrf_field()}}
+                            <div class="row">
+                                <div class="col-12">
+                                    <!--Single Forum Start-->
+                                    <div class="single-input mb-50 mb-sm-30 mb-xs-20">
+                                       <label>Nama</label>
+                                       <input name="name" required="required" type="text" value="{{Auth::user()->username}}">
+                                    </div>
+                                    <!--Single Forum End-->
+                                </div>
+
+                                <div class="col-12">
+                                    <!--Single Forum Start-->
+                                    <div class="single-input mb-50 mb-sm-30 mb-xs-20">
+                                       <label>No. Telphone</label>
+                                       <input name="notelp" type="text" placeholder="Enter Phone Number Here">
+                                    </div>
+                                    <!--Single Forum End-->
+                                </div>
+
+                                <div class="col-12">
+                                    <!--Single Forum Start-->
+                                    <div class="single-input mb-50 mb-sm-30 mb-xs-20">
+                                       <label>Id/Email in Game</label>
+                                       <input name="ign" type="text" placeholder="Enter Your Id/Email in Game Here">
+                                    </div>
+                                    <!--Single Forum End-->
+                                </div>
+
+                                <div class="col-12">
+                                    <!--Single Forum Start-->
+                                    <div class="single-input mb-50 mb-sm-30 mb-xs-20">
+                                       <label>Password in Game</label>
+                                       <input name="pass" type="password" placeholder="Enter Your Password in Game Here">
                                     </div>
 
+                                <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="rank_awal" id="inlineRadio1" value="Warrior">
+                                <input type="hidden" name="rank_tujuan" value="Elite">
+                                <input type="hidden" name="price" value="15000">
+                                <input type="hidden" name="id" value="{{Auth::user()->id}}">
+                                <label class="form-check-label" for="inlineRadio1">Warrior-Elite : Rp.15.000</label>
                                 </div>
-                            </form>
-                        
+                                <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Elite-Master : Rp.25.000</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio3" value="option3">
+                                <label class="form-check-label" for="inlineRadio1">Master-Grandmaster : Rp.40.000</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio4" value="option4">
+                                <label class="form-check-label" for="inlineRadio2">Grandmaster-Epic : Rp.90.000</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions5" id="inlineRadio5" value="option5">
+                                <label class="form-check-label" for="inlineRadio3">Epic-Legend : Rp.140.000</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio6" value="option6">
+                                <label class="form-check-label" for="inlineRadio1">Legend-Mythic : Rp.190.000</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions7" id="inlineRadio7" value="option7">
+                                <label class="form-check-label" for="inlineRadio2">Mythic-Mythical Glory : Rp.980.000</label>
+                                </div>
+                                    <!--Single Forum End-->
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="forum-post">
+                                    <br>
+                                        <button class="df-btn">Create Post</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>            
+       
                     </div>
                 </div>
                 

@@ -4228,7 +4228,7 @@ header.header.header-static {
   border-radius: 50px;
   text-transform: capitalize;
   padding: 12px 20px;
-  margin-left: 50px; }
+  margin-left: 0px; }
   @media only screen and (max-width: 767px) {
     .forum-post button.df-btn {
       margin-left: 20px; } }

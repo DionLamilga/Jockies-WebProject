@@ -8,7 +8,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Add User</h1>
+            <h1>Add Admin</h1>
           </div>
         </div>
       </div><!-- /.container-fluid -->
@@ -19,7 +19,7 @@
       
     <div class="card card-info">
               <div class="card-header">
-                <h3 class="card-title">Add User</h3>
+                <h3 class="card-title">Add Admin</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
@@ -43,6 +43,8 @@
                       <input type="password" class="form-control" id="inputpassword" placeholder="password">
                     </div>
                   </div>
+                  <input type="hidden" name="remember_token" value="a">
+                  <input type="hidden" name="role" value="1">
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
