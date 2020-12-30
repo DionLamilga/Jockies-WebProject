@@ -23,24 +23,25 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form class="form-horizontal">
+              <form action="{{ route('registerUser') }}" method="post" class= "form-horizontal">
+              {{ csrf_field() }}
                 <div class="card-body">
                   <div class="form-group row">
                     <label for="inputusername" class="col-sm-2 col-form-label">Username</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" id="inputusername" placeholder="Username">
+                      <input type="text" class="form-control" id="inputusername" placeholder="Username" name="username">
                     </div>
                   </div>
                   <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-2 col-form-label">Email</label>
                     <div class="col-sm-10">
-                      <input type="email" class="form-control" id="inputemail" placeholder="Email">
+                      <input type="email" class="form-control" id="inputemail" placeholder="Email" name="email">
                     </div>
                   </div>
                   <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
                     <div class="col-sm-10">
-                      <input type="password" class="form-control" id="inputpassword" placeholder="password">
+                      <input type="password" class="form-control" id="inputpassword" placeholder="password" name="password">
                     </div>
                   </div>
                   <input type="hidden" name="remember_token" value="a">
@@ -48,7 +49,7 @@
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
-                  <button type="submit" class="btn btn-info float-right">Tambah</button>
+                  <button type="submit" value="register" class="btn btn-info float-right">Tambah</button>
                 </div>
                 <!-- /.card-footer -->
               </form>

@@ -44,8 +44,8 @@
                         <td>{{ $p->password }}</td>
                         <td>{{ $p->role }}</td>
                         <td>
-                        <button class="btn-sm btn-success" href="#">Edit</button>
-                        <button class="btn-sm btn-danger" href="#">Hapus</button>
+                        <a href="#" class="btn-sm btn-success">Edit</a>
+                        <a href="/admin/deluser/{{ $p->id }}" class="btn-sm btn-danger">Hapus</a>
                         </td>
                     </tr>
                     @endforeach

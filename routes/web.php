@@ -35,8 +35,14 @@ Route::get('/logout',[App\Http\Controllers\customAuth\LoginController::class,'lo
 
 Route::get('/admin/adduser',[App\Http\Controllers\AdminPage\AdminController::class,'adduser'])->middleware('MiddlewareCek');
 
+Route::post('/admin/adduser',[App\Http\Controllers\AdminPage\AdminController::class,'store'])->name('registerUser');
+
 Route::get('/admin/tbluser',[App\Http\Controllers\AdminPage\AdminController::class,'tbluser'])->middleware('MiddlewareCek');
+
+Route::get('/admin/deluser/{id}',[App\Http\Controllers\AdminPage\AdminController::class,'deluser']);
 
 Route::post('/trans',[App\Http\Controllers\TransaksiController::class,'store'])->name('transaksiPengguna');
 
 Route::get('/trans',[App\Http\Controllers\TransaksiController::class,'view']);
+
+

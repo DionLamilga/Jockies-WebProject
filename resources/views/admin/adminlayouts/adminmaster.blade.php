@@ -25,6 +25,9 @@
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="/logout" class="nav-link">Log Out</a>
+      </li>
     </ul>
   </nav>
   <!-- /.navbar -->
@@ -42,7 +45,7 @@
       <!-- Sidebar user (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a href="#" class="d-block">{{Auth::user()->username}}</a>
         </div>
       </div>
 
