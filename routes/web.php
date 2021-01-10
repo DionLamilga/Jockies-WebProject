@@ -37,6 +37,10 @@ Route::get('/admin/adduser',[App\Http\Controllers\AdminPage\AdminController::cla
 
 Route::post('/admin/adduser',[App\Http\Controllers\AdminPage\AdminController::class,'store'])->name('registerUser');
 
+Route::get('/admin/edituser/{id}',[App\Http\Controllers\AdminPage\AdminController::class,'edituser']);
+
+Route::post('/admin/edituser',[App\Http\Controllers\AdminPage\AdminController::class,'update'])->name('updateUser');
+
 Route::get('/admin/tbluser',[App\Http\Controllers\AdminPage\AdminController::class,'tbluser'])->middleware('MiddlewareCek');
 
 Route::get('/admin/deluser/{id}',[App\Http\Controllers\AdminPage\AdminController::class,'deluser']);

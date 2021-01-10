@@ -44,7 +44,7 @@
                         <td>{{ $p->password }}</td>
                         <td>{{ $p->role }}</td>
                         <td>
-                        <a href="#" class="btn-sm btn-success">Edit</a>
+                        <a href="/admin/edituser/{{ $p->id }}" class="btn-sm btn-success">Edit</a>
                         <a href="/admin/deluser/{{ $p->id }}" class="btn-sm btn-danger">Hapus</a>
                         </td>
                     </tr>
@@ -65,4 +65,5 @@
         <!-- /.content -->
     </div>
 </div>
+
 @stop

@@ -8,11 +8,11 @@
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="assets-admin/plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="{{ asset('admin/assets-admin/plugins/fontawesome-free/css/all.min.css') }}">
   <!-- icheck bootstrap -->
-  <link rel="stylesheet" href="assets-admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <link rel="stylesheet" href="{{ asset('admin/assets-admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}">
   <!-- Theme style -->
-  <link rel="stylesheet" href="assets-admin/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="{{ asset('admin/assets-admin/dist/css/adminlte.min.css') }}">
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -36,7 +36,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="#" class="brand-link">
-      <img src="assets-admin/dist/img/rsz_logo-cropped.png" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <img src="{{ asset('admin/assets-admin/dist/img/rsz_logo-cropped.png') }}" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">Jockies</span>
     </a>
 
@@ -93,10 +93,11 @@
 <!-- ./wrapper -->
 </aside>
 
-<script src="assets-admin/plugins/jquery/jquery.min.js"></script>
+<script src="{{ asset('admin/assets-admin/plugins/jquery/jquery.min.js') }}"></script>
 <!-- Bootstrap 4 -->
-<script src="assets-admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="{{ asset('admin/assets-admin/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 <!-- AdminLTE App -->
-<script src="assets-admin/dist/js/adminlte.min.js"></script>
+<script src="{{ asset('admin/assets-admin/dist/js/adminlte.min.js') }}"></script>
+
 </body>
 </html>

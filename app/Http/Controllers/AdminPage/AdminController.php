@@ -45,6 +45,26 @@ class AdminController extends Controller
         $penggunas = DB::table('penggunas')->get();
         return view('admin/tbluser',['penggunas' => $penggunas]);
     }
+
+    public function edituser($id)
+    {
+	    $penggunas = DB::table('penggunas')->where('id',$id)->get();
+    	return view('admin/edituser',['penggunas' => $penggunas]);
+ 
+    }
+
+    public function update(Request $request)
+    {
+        DB::table('penggunas')->where('id',$request->id)->update([
+            'username' => $request->username,
+            'email' => $request->email,
+            'password'=> Hash::make($request->password),
+            'remember_token' => $request->remember_token,
+            'role' => $request->role,
+        ]);
+        return redirect('/admin/tbluser');
+    }
+
     public function deluser($id)
     {
         DB::table('penggunas')->where('id',$id)->delete();
