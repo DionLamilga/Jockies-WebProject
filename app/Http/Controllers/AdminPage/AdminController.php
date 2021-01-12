@@ -71,4 +71,17 @@ class AdminController extends Controller
 		
 	    return redirect('/admin/tbluser');
     }
+
+    public function tbltransaksi()
+    {
+        $transaksis = DB::table('transaksis')->get();
+        return view('admin/tbltransaksi',['transaksis' => $transaksis]);
+    }
+
+    public function deltransaksi($id_tr)
+    {
+        DB::table('transaksis')->where('id_tr',$id_tr)->delete();
+		
+	    return redirect('/admin/tbltransaksi');
+    }
 }

@@ -57,7 +57,7 @@
             <li class="nav-item">
             <a href="/admin/adduser" class="nav-link">
             <i class="fa fa-user nav-icon"></i>
-            <p>Add User</p>
+            <p>Add Admin</p>
             </a>
         </ul>
       </nav>
@@ -69,6 +69,17 @@
             <a href="/admin/tbluser" class="nav-link">
             <i class="fa fa-users nav-icon"></i>
             <p>User Table</p>
+            </a>
+        </ul>
+      </nav>
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+            <li class="nav-item">
+            <a href="/admin/tbltransaksi" class="nav-link">
+            <i class="fa fa-users nav-icon"></i>
+            <p>Transaksi</p>
             </a>
         </ul>
       </nav>

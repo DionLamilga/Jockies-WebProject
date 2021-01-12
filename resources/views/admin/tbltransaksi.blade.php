@@ -19,7 +19,7 @@
             <div class="col-12">
                 <div class="card card-info">
                 <div class="card-header">
-                    <h3 class="card-title">User Table</h3>
+                    <h3 class="card-title">Transaksi Table</h3>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
@@ -27,27 +27,28 @@
                     <thead>
                     <tr>
                         <th>Nomor</th>
-                        <th>ID</th>
-                        <th>Username</th>
-                        <th>Email</th>
+                        <th>ID User</th>
+                        <th>In Game Name</th>
                         <th>Password</th>
-                        <th>Role</th>
+                        <th>Rank Awal</th>
+                        <th>Rank Akhir</th>
+                        <th>No. Telfon</th>
                         <th>Action</th>
                     </tr>
                     </thead>
                     <tbody>
                     <?php $no=1 ?>
-                    @foreach($penggunas as $p)
+                    @foreach($transaksis as $p)
                     <tr>
                         <td><?php echo $no++ ?></td>
                         <td>{{ $p->id }}</td>
-                        <td>{{ $p->username }}</td>
-                        <td>{{ $p->email }}</td>
-                        <td>{{ $p->password }}</td>
-                        <td>{{ $p->role }}</td>
+                        <td>{{ $p->ign }}</td>
+                        <td>{{ $p->pass }}</td>
+                        <td>{{ $p->rank_awal }}</td>
+                        <td>{{ $p->rank_tujuan }}</td>
+                        <td>{{ $p->notelp }}</td>
                         <td>
-                        <a href="/admin/edituser/{{ $p->id }}" class="btn-sm btn-success">Edit</a>
-                        <a href="/admin/deluser/{{ $p->id }}" class="btn-sm btn-danger">Hapus</a>
+                        <a href="/admin/deltransaksi/{{ $p->id_tr }}" class="btn-sm btn-danger">Hapus</a>
                         </td>
                     </tr>
                     @endforeach

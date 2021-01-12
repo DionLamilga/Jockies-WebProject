@@ -88,28 +88,46 @@
                                 <label class="form-check-label" for="inlineRadio1">Warrior-Elite : Rp.15.000</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">
+                                <input class="form-check-input" type="radio" name="rank_awal" id="inlineRadio2" value="Elite">
+                                <input type="hidden" name="rank_tujuan" value="Master">
+                                <input type="hidden" name="price" value="25000">
+                                <input type="hidden" name="id" value="{{Auth::user()->id}}">
                                 <label class="form-check-label" for="inlineRadio2">Elite-Master : Rp.25.000</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio3" value="option3">
-                                <label class="form-check-label" for="inlineRadio1">Master-Grandmaster : Rp.40.000</label>
+                                <input class="form-check-input" type="radio" name="rank_awal" id="inlineRadio3" value="Master">
+                                <input type="hidden" name="rank_tujuan" value="Grandmaster">
+                                <input type="hidden" name="price" value="40000">
+                                <input type="hidden" name="id" value="{{Auth::user()->id}}">
+                                <label class="form-check-label" for="inlineRadio3">Master-Grandmaster : Rp.40.000</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio4" value="option4">
-                                <label class="form-check-label" for="inlineRadio2">Grandmaster-Epic : Rp.90.000</label>
+                                <input class="form-check-input" type="radio" name="rank_awal" id="inlineRadio4" value="Grandmaster">
+                                <input type="hidden" name="rank_tujuan" value="Epic">
+                                <input type="hidden" name="price" value="90000">
+                                <input type="hidden" name="id" value="{{Auth::user()->id}}">
+                                <label class="form-check-label" for="inlineRadio4">Grandmaster-Epic : Rp.90.000</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions5" id="inlineRadio5" value="option5">
-                                <label class="form-check-label" for="inlineRadio3">Epic-Legend : Rp.140.000</label>
+                                <input class="form-check-input" type="radio" name="rank_awal" id="inlineRadio5" value="Epic">
+                                <input type="hidden" name="rank_tujuan" value="Legend">
+                                <input type="hidden" name="price" value="140000">
+                                <input type="hidden" name="id" value="{{Auth::user()->id}}">
+                                <label class="form-check-label" for="inlineRadio5">Epic-Legend : Rp.140.000</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio6" value="option6">
-                                <label class="form-check-label" for="inlineRadio1">Legend-Mythic : Rp.190.000</label>
+                                <input class="form-check-input" type="radio" name="rank_awal" id="inlineRadio6" value="Legend">
+                                <input type="hidden" name="rank_tujuan" value="Mythic">
+                                <input type="hidden" name="price" value="190000">
+                                <input type="hidden" name="id" value="{{Auth::user()->id}}">
+                                <label class="form-check-label" for="inlineRadio6">Legend-Mythic : Rp.190.000</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions7" id="inlineRadio7" value="option7">
-                                <label class="form-check-label" for="inlineRadio2">Mythic-Mythical Glory : Rp.980.000</label>
+                                <input class="form-check-input" type="radio" name="rank_awal" id="inlineRadio7" value="Mythic">
+                                <input type="hidden" name="rank_tujuan" value="Mythical Glory">
+                                <input type="hidden" name="price" value="980000">
+                                <input type="hidden" name="id" value="{{Auth::user()->id}}">
+                                <label class="form-check-label" for="inlineRadio7">Mythic-Mythical Glory : Rp.980.000</label>
                                 </div>
                                     <!--Single Forum End-->
                                 </div>

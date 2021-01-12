@@ -43,7 +43,11 @@ Route::post('/admin/edituser',[App\Http\Controllers\AdminPage\AdminController::c
 
 Route::get('/admin/tbluser',[App\Http\Controllers\AdminPage\AdminController::class,'tbluser'])->middleware('MiddlewareCek');
 
+Route::get('/admin/tbltransaksi',[App\Http\Controllers\AdminPage\AdminController::class,'tbltransaksi'])->middleware('MiddlewareCek');
+
 Route::get('/admin/deluser/{id}',[App\Http\Controllers\AdminPage\AdminController::class,'deluser']);
+
+Route::get('/admin/deltransaksi/{id_tr}',[App\Http\Controllers\AdminPage\AdminController::class,'deltransaksi']);
 
 Route::post('/trans',[App\Http\Controllers\TransaksiController::class,'store'])->name('transaksiPengguna');
 
